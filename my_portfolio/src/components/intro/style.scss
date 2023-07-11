@@ -1,0 +1,34 @@
+@import '../../style-config/mixins.scss';
+@import '../../style-config/variable.scss';
+
+.Intro-section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .vector-bg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url(../../images/bg-image-02-01.png);
+        position: fixed;
+        opacity:10%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center right;
+        z-index: 0;
+        @include small-screen{
+            background-position: center center;
+        }
+    }
+    
+    .content{
+        width: 1200px;
+        padding: 0 20px;
+        position: relative;
+        display: flex;
+        flex-direction:column;
+    }
+}

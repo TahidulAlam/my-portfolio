@@ -1,0 +1,74 @@
+@import '../../style-config/mixins.scss';
+@import '../../style-config/variable.scss';
+
+
+.footer{
+    padding-bottom: 0;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .footer-logo{
+        width: 150px;
+        // img{
+        //     display: block;
+        //     width: 100%;
+        // }
+        
+    }
+    .footer-menu{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        .footer-menu-item{
+            @include typography(18px, 400, 22px);
+            color: $white;
+            margin: 0 12.5px;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+    .social-icons{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        .social-icon{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            font-size: 18px;
+            margin: 5px;
+            // margin: 0 12.5;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+    .bottom-bar{
+        width: 100%;
+        height: 75px;
+        // color: rgb(0, 119, 255);
+        border-top: 1px solid  rgb(13, 0, 37);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 45px;
+        .copyright-text{
+            color: rgb(2, 0, 31);
+            @include typography(14px ,500, 20px)
+        }
+    }
+}

@@ -1,0 +1,72 @@
+@import "../../../style-config/mixins.scss";
+@import "../../../style-config/variable.scss";
+
+.Intro-content{
+    flex-grow: 1;
+    display: flex;
+    // align-items: flex-end;
+    margin-top: 5%;
+    .layout{
+        display: flex;
+        .left-col{
+            width: 50%;
+            @include medium-screen {
+                padding-top:55px;
+            }
+            @include large-screen {
+                padding-top:0;
+                width: 37%;
+            }
+            
+            .title{
+                display: flex;
+                flex-direction: column;
+                color: $white;
+                .small-text{
+                    @include typography(42px, 500, 48px);
+                    display: flex;
+                    align-items: center;
+                    .icon{
+                        margin-left: 10px;
+                    }
+                    
+                }
+                .big-text{
+                    @include typography(62px, 400, 72px);
+                }
+                .title-text{
+                    @include typography(18px, 100, 15px); 
+                }
+                
+            }
+            p{
+                @include typography(18px, 400, 24px);
+                margin: 25px 0;
+                color: $white;
+                // color: $yallow;
+            }
+        }
+        .right-col{
+            width: 50%;
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            @include large-screen{
+                width: 63%;
+            }
+            .profile-pic{
+                width: 70%;
+                margin: auto;
+                display: block;
+                margin-top: 40px;
+                // margin-bottom:40px;
+                @include large-screen{
+                    margin-bottom: 50px;
+                    position: relative;
+                    right: -100px;
+                }
+            }
+        }
+        
+    }
+}

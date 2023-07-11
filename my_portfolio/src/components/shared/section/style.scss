@@ -1,0 +1,35 @@
+@import "../../../style-config/variable.scss";
+
+.section {
+    // padding: 100px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url(../../images/bg-image-02-01.png);
+
+    &.dark {
+        background: linear-gradient(90deg, #250047, #1a003b 40%);
+        background-image: url(../../images/bg-image-02-01.png);
+
+        &.dark {
+            background-image: url(../../images/bg-image-02-01.png);
+
+        }
+
+        .content {
+            width: 1200px;
+            padding: 0 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .section-title {
+                width: 100%;
+                text-align: center;
+                color: $white;
+                max-width: 500px;
+            }
+        }
+    }
+}
