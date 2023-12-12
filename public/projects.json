@@ -1,0 +1,50 @@
+{
+    "projects": [
+      {
+        "name": "Booknin",
+        "liveProjectLink": "Booknin Live",
+        "technologies": {
+          "frontend": ["React.js", "React Router", "Axios"],
+          "backend": ["Node.js", "Express.js", "MongoDB"]
+        },
+        "overview": "Library management system for book tracking. Manage books, borrow, return, and update book information.",
+        "features": [
+          "Book CRUD Operations",
+          "Borrowing and Returning Books",
+          "Comprehensive List of Library Books"
+        ]
+      },
+      {
+        "name": "Petadopy",
+        "liveDemoLink": "Petadopy Live",
+        "technologies": {
+          "frontend": ["React.js", "React Router", "Axios"],
+          "backend": ["Node.js", "Express.js", "MongoDB"],
+          "authentication": ["JSON Web Tokens (JWT)"]
+        },
+        "features": [
+          "User Dashboard for Pet Adoption",
+          "Admin Dashboard for Pet and Campaign Management",
+          "Add Pets for Adoption",
+          "Create and Donate to Campaigns",
+          "Adopt Pets"
+        ],
+        "demoCredentials": {
+          "admin": {
+            "username": "admin1@mail.com",
+            "password": "admin1@mail.com"
+          }
+        }
+      },
+      {
+        "name": "Gari Dekhun",
+        "liveProjectLink": "https://gari-dekhun.web.app/",
+        "technologies": {
+          "frontend": ["ReactJs"],
+          "backend": ["MongoDb", "ExpressJs", "NodeJS (MERN)"]
+        },
+        "details": "Simple Ecommerce project with multi-platform authentication, product viewing, user product listings, shopping cart, and individual user accounts."
+      }
+    ]
+  }
+  
