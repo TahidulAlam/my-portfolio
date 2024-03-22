@@ -6,8 +6,8 @@ const Navbar = () => {
   return (
     <div>
       <Container>
-        <div className="navbar bg-none text-black z-50 relative">
-          <div className="navbar-start  text-white">
+        <div className="navbar bg-none text-[#161D2D] z-50 relative">
+          <div className="navbar-start  text-[#161D2D]">
             <div className="dropdown text-2xl">
               <div
                 tabIndex={0}
@@ -34,59 +34,59 @@ const Navbar = () => {
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  font-medium font-poppins text-xl"
               >
                 <li>
-                  <a className="text-black" href="#">
+                  <a className="text-[#161D2D]" href="#">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a className="text-black" href="#about">
+                  <a className="text-[#161D2D]" href="#about">
                     About
                   </a>
                 </li>
                 <li>
-                  <a className="text-black" href="#skill">
+                  <a className="text-[#161D2D]" href="#skill">
                     Skills
                   </a>
                 </li>
                 <li>
-                  <a className="text-black" href="#projects">
+                  <a className="text-[#161D2D]" href="#projects">
                     Projects
                   </a>
                 </li>
                 <li>
-                  <a className="text-black" href="#contact">
+                  <a className="text-[#161D2D]" href="#contact">
                     Contact
                   </a>
                 </li>
               </ul>
             </div>
             {/* <a className="text-xl">tahidul</a> */}
-            <img src={logo} className="w-40" alt="" />
+            {/* <img src={logo} className="w-40" alt="" /> */}
           </div>
           <div className="navbar-end hidden lg:flex justify-end font-medium font-poppins ">
             <ul className="menu menu-horizontal px-1 text-xl">
               <li>
-                <a className="text-white" href="#">
+                <a className="text-[#161D2D]" href="/">
                   Home
                 </a>
               </li>
               <li>
-                <a className="text-white" href="#about">
+                <a className="text-[#161D2D]" href="#about">
                   About
                 </a>
               </li>
               <li>
-                <a className="text-white" href="#skill">
+                <a className="text-[#161D2D]" href="#skill">
                   Skills
                 </a>
               </li>
               <li>
-                <a className="text-white" href="#projects">
+                <a className="text-[#161D2D]" href="#projects">
                   Projects
                 </a>
               </li>
               <li>
-                <a className="text-white" href="#contact">
+                <a className="text-[#161D2D]" href="#contact">
                   Contact
                 </a>
               </li>

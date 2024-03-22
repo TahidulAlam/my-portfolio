@@ -1,16 +1,16 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import logo from "../../assets/logo2.png";
+import logo from "../../assets/logoNew.png";
 import Container from "../component/Container";
 const Footer = () => {
   return (
     <div>
-      <div className="bg-[#161D2D]">
+      <div className="bg-white">
         <Container>
           <footer className="footer items-center p-4  text-neutral-content">
-            <div className="items-center grid-flow-col">
+            <div className="items-center grid-flow-col p-10">
               <img src={logo} className="w-40" alt="" />
-              <p>Copyright © 2023 - All right reserved</p>
+              {/* <p>Copyright © 2023 - All right reserved</p> */}
             </div>
             {/* <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
               <a>

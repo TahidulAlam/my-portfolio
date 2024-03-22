@@ -35,7 +35,7 @@ const Form = () => {
       <form
         id="queryForm"
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 text-white"
+        className="flex flex-col lg:py-6 py-2 lg:space-y-6 space-y-2 md:py-0 md:px-6 text-[#161D2D]"
       >
         <div className="grid grid-cols-2 gap-2">
           <level className="block">
@@ -43,7 +43,7 @@ const Form = () => {
             <input
               type="text"
               name="from_name"
-              className=" px-2 py-2 block w-full rounded-md shadow-sm focus:ring focus:ri focus:ri text-black"
+              className=" px-2 py-2 block w-full rounded-md shadow-sm focus:ring focus:ri focus:ri text-[#161D2D]"
               placeholder="Name"
               {...register("from_name", {
                 required: "Name is required",
@@ -59,7 +59,7 @@ const Form = () => {
             <input
               type="text"
               name="reply_to"
-              className=" px-2 py-2 block w-full rounded-md shadow-sm focus:ring focus:ri focus:ri text-black"
+              className=" px-2 py-2 block w-full rounded-md shadow-sm focus:ring focus:ri focus:ri text-[#161D2D]"
               placeholder="Email"
               {...register("reply_to", {
                 required: "Email is required",
@@ -82,7 +82,7 @@ const Form = () => {
             type="text"
             name="subject"
             placeholder="Subject"
-            className=" px-2 py-2 block w-full rounded-md shadow-sm focus:ring focus:ri focus:ri text-black"
+            className=" px-2 py-2 block w-full rounded-md shadow-sm focus:ring focus:ri focus:ri text-[#161D2D]"
             {...register("subject", {
               required: "Subject is required",
               minLength: {
@@ -101,7 +101,7 @@ const Form = () => {
             // className="textarea"
             name="message"
             rows="3"
-            className="textarea block w-full rounded-md focus:ring focus:ri focus:ri text-black"
+            className="textarea block w-full rounded-md focus:ring focus:ri focus:ri text-[#161D2D]"
             placeholder="Your message"
             {...register("message", {
               required: "Message is required",
