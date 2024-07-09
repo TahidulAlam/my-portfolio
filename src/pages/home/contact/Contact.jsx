@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div>
       {/* <h1 className="text-center lg:p-10 lg:pt-0 text-2xl">Contact</h1> */}
-      <section className="lg:py-6 text-[#161D2D]">
+      <section className="lg:py-6 dark:text-white text-blue-950">
         <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
           <div data-aos="fade-down">
             <div className="lg:py-6 md:py-0 md:px-6">

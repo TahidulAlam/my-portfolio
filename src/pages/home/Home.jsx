@@ -14,63 +14,94 @@ import Experience from "./experience/Experience";
 // import contact from "../../assets/button/location.png";
 // import projects from "../../assets/button/projects.png";
 // import skill from "../../assets/button/skill.png";
-import bgImage from "../../assets/bgImage.jpg";
+// import bgImage from "../../assets/bgImage.jpg";
+import bgImageDark from "../../assets/banner-box3.png";
+import bgImageWhite from "../../assets/banner-white.png";
 import { Link } from "react-router-dom";
 // import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
-
+// 010026
 const Home = () => {
   // const [tabIndex, setTabIndex] = useState(0);
+  // bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10
   return (
-    <div>
+    <div className=" dark:bg-gradient-to-r dark:from-[#000024] dark:to-[#31025C] w-[100%] h-[100] bg-gradient-to-r from-[#bdbdbd] to-[#e4e4e4]">
       <img
-        src={bgImage}
+        src={bgImageDark}
         alt=""
-        className="w-[100%] h-[100%] opacity-40 fixed"
+        className="w-[100%] h-[100%] opacity-40 fixed dark:block hidden"
+      />
+      <img
+        src={bgImageWhite}
+        alt=""
+        className="w-[100%] h-[100%] opacity-40 fixed block dark:hidden"
       />
       <div>
         <HeroBanner />
       </div>
       {/* bg-white */}
-      <div className="bg-white w-full">
-        <Container newClass={"bg-white pt-20"}>
-          <hr className="pb-2 pt-5" />
-          <h1 id="about" className="pb-5 text-4xl font-semibold text-[#161D2D]">
-            About
-          </h1>
-          <AboutMe />
+      <div className=" w-full">
+        <Container newClass={"mt-20 pt-20"}>
+          <div className="flex items-center gap-2 my-10">
+            <h1
+              id="about"
+              className="text-4xl font-semibold dark:text-white text-blue-950"
+            >
+              About
+            </h1>
+            <hr className="flex-grow border-t-2 dark:border-white border-blue-950" />
+          </div>
+          <div className="mt-2">
+            <AboutMe />
+          </div>
         </Container>
-        <Container newClass={"bg-white pt-20"}>
-          <hr className="pb-2 pt-5" />
-          <h1 id="about" className="pb-5 text-4xl font-semibold text-[#161D2D]">
-            Experience
-          </h1>
-          <Experience />
+        <Container newClass={"mt-20 pt-20"}>
+          <div className="flex items-center gap-2 my-10">
+            <h1
+              id="about"
+              className="text-4xl font-semibold dark:text-white text-blue-950"
+            >
+              Experience
+            </h1>
+            <hr className="flex-grow border-t-2 dark:border-white border-blue-950" />
+          </div>
+          <div className="mt-2">
+            <Experience />
+          </div>
         </Container>
         <Container newClass={"mt-20 pb-20"}>
-          <hr className="pb-2 pt-5" />
-          <h1 id="skill" className="pb-5 text-4xl font-semibold text-[#161D2D]">
-            Skill
-          </h1>
+          <div className="flex items-center gap-2 my-10">
+            <h1
+              id="about"
+              className="text-4xl font-semibold dark:text-white text-blue-950"
+            >
+              Skill
+            </h1>
+            <hr className="flex-grow border-t-2 dark:border-white border-blue-950" />
+          </div>
           <MySkill />
         </Container>
         <Container newClass={"mt-20 pb-20"}>
-          <hr className="pb-2 pt-5" />
-          <h1
-            id="projects"
-            className="pb-5 text-4xl font-semibold text-[#161D2D]"
-          >
-            Projects
-          </h1>
+          <div className="flex items-center gap-2 my-10">
+            <h1
+              id="about"
+              className="text-4xl font-semibold dark:text-white text-blue-950"
+            >
+              Projects
+            </h1>
+            <hr className="flex-grow border-t-2 dark:border-white border-blue-950" />
+          </div>
           <Projects />
         </Container>
         <Container newClass={"mt-20 pb-20"}>
-          <hr className="pb-2 pt-5" />
-          <h1
-            id="contact"
-            className="pb-5 text-4xl font-semibold text-[#161D2D]"
-          >
-            Contact
-          </h1>
+          <div className="flex items-center gap-2 my-10">
+            <h1
+              id="about"
+              className="text-4xl font-semibold dark:text-white text-blue-950"
+            >
+              Contact
+            </h1>
+            <hr className="flex-grow border-t-2 dark:border-white border-blue-950" />
+          </div>
           <Contact />
         </Container>
       </div>
@@ -174,6 +205,19 @@ const Home = () => {
           </Tabs>
         </div>
       </div> */}
+      <ScrollToTop
+        style={{
+          width: "40px",
+          borderRadius: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          // border: "2px solid white",
+          // color: "none",
+        }}
+        className="dark:bg-white bg-blue-950"
+        smooth
+      />
     </div>
   );
 };

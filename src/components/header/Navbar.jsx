@@ -2,12 +2,14 @@
 import React from "react";
 import Container from "../component/Container";
 import logo from "../../assets/logo2.png";
+import logoDark from "../../assets/logoNew.png";
+import Switcher from "../../utils/Switcher";
 const Navbar = () => {
   return (
     <div>
       <Container>
-        <div className="navbar bg-none text-[#161D2D] z-50 relative">
-          <div className="navbar-start  text-[#161D2D]">
+        <div className="navbar bg-none dark:text-white text-blue-950 z-50 relative">
+          <div className="navbar-start  dark:text-white text-blue-950 ">
             <div className="dropdown text-2xl">
               <div
                 tabIndex={0}
@@ -34,65 +36,66 @@ const Navbar = () => {
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  font-medium font-poppins text-xl"
               >
                 <li>
-                  <a className="text-[#161D2D]" href="#">
+                  <a className="dark:text-white text-blue-950" href="#">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a className="text-[#161D2D]" href="#about">
+                  <a className="dark:text-white text-blue-950" href="#about">
                     About
                   </a>
                 </li>
                 <li>
-                  <a className="text-[#161D2D]" href="#skill">
+                  <a className="dark:text-white text-blue-950" href="#skill">
                     Skills
                   </a>
                 </li>
                 <li>
-                  <a className="text-[#161D2D]" href="#projects">
+                  <a className="dark:text-white text-blue-950" href="#projects">
                     Projects
                   </a>
                 </li>
                 <li>
-                  <a className="text-[#161D2D]" href="#contact">
+                  <a className="dark:text-white text-blue-950" href="#contact">
                     Contact
                   </a>
                 </li>
               </ul>
             </div>
             {/* <a className="text-xl">tahidul</a> */}
-            {/* <img src={logo} className="w-40" alt="" /> */}
+            <img src={logo} className="w-24 dark:block hidden" alt="" />
+            <img src={logoDark} className="w-24 dark:hidden block" alt="" />
           </div>
           <div className="navbar-end hidden lg:flex justify-end font-medium font-poppins ">
-            <ul className="menu menu-horizontal px-1 text-xl">
-              <li>
-                <a className="text-[#161D2D]" href="/">
+            <ul className="menu menu-horizontal px-1 text-base">
+              {/* <li>
+                <a className="dark:text-white text-blue-950" href="/">
                   Home
                 </a>
-              </li>
+              </li> */}
               <li>
-                <a className="text-[#161D2D]" href="#about">
+                <a className="dark:text-white text-blue-950" href="#about">
                   About
                 </a>
               </li>
               <li>
-                <a className="text-[#161D2D]" href="#skill">
+                <a className="dark:text-white text-blue-950" href="#skill">
                   Skills
                 </a>
               </li>
               <li>
-                <a className="text-[#161D2D]" href="#projects">
+                <a className="dark:text-white text-blue-950" href="#projects">
                   Projects
                 </a>
               </li>
               <li>
-                <a className="text-[#161D2D]" href="#contact">
+                <a className="dark:text-white text-blue-950" href="#contact">
                   Contact
                 </a>
               </li>
             </ul>
           </div>
-          {/* <div className="navbar-end"></div> */}
+          <Switcher />
         </div>
       </Container>
     </div>

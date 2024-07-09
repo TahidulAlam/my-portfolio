@@ -1,23 +1,35 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React from "react";
-import image from "../../../assets/56164771.jpg";
+import { IoLogoFacebook } from "react-icons/io5";
+import image from "../../../assets/profile.jpg";
+import { motion } from "framer-motion";
 const AboutMe = () => {
   return (
     <div>
-      {/* <h1 className="text-center lg:p-10 lg:pt-0 text-2xl">About</h1> */}
       <div className="grid lg:grid-cols-2 grid-cols-1 lg:w-full w-[90%] mx-auto lg:gap-10 gap-3">
         <div data-aos="fade-up">
           <div>
-            <img
-              src={image}
-              className="rounded-full lg:w-96 w-40 mx-auto"
-              alt=""
-            />
+            <motion.div
+              animate={{
+                y: [0, 24, 0],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+            >
+              <img
+                src={image}
+                className="rounded-full lg:w-96 w-40 mx-auto"
+                alt=""
+              />
+            </motion.div>
           </div>
         </div>
         <div data-aos="fade-down">
-          <div className="text-[#161D2D] flex flex-col gap-5 justify-center items-start">
+          <div className="dark:text-white text-blue-950 flex flex-col gap-5 justify-center items-start">
             <p className="text-justify lg:text-lg text-sm">
               Hello! I'm{" "}
               <span className="font-medium text-sky-600">Md Tahidul Alam</span>{" "}
@@ -43,27 +55,29 @@ const AboutMe = () => {
                 Session : <span>2019-2023</span>
               </p>
             </div>
-            <div className="grid grid-cols-4 gap-1 place-items-start">
-              <a href="https://www.linkedin.com/in/mdtahidulalam">
-                <button className="btn btn-sm bg-slate-800 text-white hover:bg-white font-semibold cursor-pointer hover:text-slate-800">
-                  Linkedin
-                </button>
-              </a>
-              <a href="https://github.com/TahidulAlam">
-                <button className="btn btn-sm bg-slate-800 text-white hover:bg-white font-semibold cursor-pointer hover:text-slate-800">
-                  GitHub
-                </button>
-              </a>
-              <a href="https://facebook.com/mdTahidulAlam.me">
-                <button className="btn btn-sm bg-slate-800 text-white hover:bg-white font-semibold cursor-pointer hover:text-slate-800">
-                  Facebook
-                </button>
-              </a>
-              <a href="https://twitter.com/MdTahidulAlam">
-                <button className="btn btn-sm bg-slate-800 text-white hover:bg-white font-semibold cursor-pointer hover:text-slate-800">
-                  Twitter
-                </button>
-              </a>
+            <div className="flex lg:gap-4 gap-2">
+              <div>
+                <a href="https://www.linkedin.com/in/mdtahidulalam">
+                  <button className="btn btn-sm">Linkedin</button>
+                </a>
+              </div>
+              <div>
+                <a href="https://github.com/TahidulAlam">
+                  <button className="btn btn-sm">GitHub</button>
+                </a>
+              </div>
+              <div>
+                <a href="https://facebook.com/mdTahidulAlam.me">
+                  <button className="btn btn-sm">
+                    {/* <IoLogoFacebook className="w-5" /> */} Facebook
+                  </button>
+                </a>
+              </div>
+              <div>
+                <a href="https://twitter.com/MdTahidulAlam">
+                  <button className="btn btn-sm">Twitter</button>
+                </a>
+              </div>
             </div>
           </div>
         </div>

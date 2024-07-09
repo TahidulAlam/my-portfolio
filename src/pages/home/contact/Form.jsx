@@ -35,7 +35,7 @@ const Form = () => {
       <form
         id="queryForm"
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col lg:py-6 py-2 lg:space-y-6 space-y-2 md:py-0 md:px-6 text-[#161D2D]"
+        className="flex flex-col lg:py-6 py-2 lg:space-y-6 space-y-2 md:py-0 md:px-6 dark:text-white text-blue-950"
       >
         <div className="grid grid-cols-2 gap-2">
           <level className="block">
